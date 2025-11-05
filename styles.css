@@ -1,5 +1,7 @@
 body {
     background-color: #464646;
+    color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 ul {
@@ -34,7 +36,7 @@ ul li a:hover {
   z-index: 1;
   top: 40;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 /* Control the left side */
