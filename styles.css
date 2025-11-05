@@ -6,7 +6,25 @@ body {
 
 p {
   font-style: normal;
-  font-size: 40px;
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(189, 180, 89);
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+br {
+  margin-top: 5px;
 }
 
 ul {
@@ -69,7 +87,8 @@ ul li a:hover {
   position: absolute;
   top: 25%;
   left: 25%;
-  transform: translate(-25%, -25%)
+  transform: translate(-25%, -25%);
+  text-align: left;
 }
 
 /* Style the image inside the centered container, if needed */
