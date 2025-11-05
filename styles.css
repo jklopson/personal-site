@@ -65,12 +65,14 @@ ul li a:hover {
 /* Control the left side */
 .left {
   left: 0;
+  background-color: rgb(61, 61, 61);
   opacity: 10;
 }
 
 /* Control the right side */
 .right {
   right: 0;
+  background-color: rgb(75, 75, 75);
   opacity: 10;
 }
 
@@ -79,15 +81,16 @@ ul li a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -65%);
   text-align: center;
 }
 
 .mildcenter {
   position: absolute;
   top: 25%;
+  bottom: 25%;
   left: 25%;
-  transform: translate(-25%, -25%);
+  transform: translate(-25%, -5%);
   text-align: left;
 }
 
