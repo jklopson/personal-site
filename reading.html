@@ -12,5 +12,44 @@
         <li><a href="projects.html">Projects</a></li>
         <li><a href="reading.html">Reading</a></li>
     </ul>
+
+    <div class="content-wrapper">
+        <table class="reading-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Date Read</th>
+                </tr>
+            </thead>
+            <tbody id="bookTableBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const books = [
+            { title: "Yellowface", author: "R. F. Kuang", dateRead: "November 6, 2025" },
+            { title: "1Q84", author: "Haruki Murakami", dateRead: "August 1, 2025" }
+        ];
+
+        function populateTable() {
+            const tbody = document.getElementById('bookTableBody');
+            tbody.innerHTML = '';
+            
+            books.forEach(book => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${book.title}</td>
+                    <td>${book.author}</td>
+                    <td>${book.dateRead}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        populateTable();
+    </script>
 </body>
 </html>
