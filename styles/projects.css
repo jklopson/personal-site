@@ -1,0 +1,100 @@
+/* Projects Page Specific Styling */
+
+.projects-container {
+    margin: 80px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.project {
+    background-color: rgb(61, 61, 61);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-bottom: 2px solid rgb(189, 180, 89);
+    transition: background-color 0.3s;
+}
+
+.project:hover {
+    background-color: rgb(75, 75, 75);
+}
+
+.project-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: rgb(189, 180, 89);
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.project-demo {
+    display: flex;
+    justify-content: center;
+}
+
+.project-demo video,
+.project-demo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    background-color: #333333;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-text {
+    margin-bottom: 1.5rem;
+    color: whitesmoke;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 2px solid rgb(189, 180, 89);
+    transition: all 0.3s;
+}
+
+.project-link:hover {
+    background-color: rgb(189, 180, 89);
+    color: #333333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .project-content {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        padding: 1rem;
+        margin: 60px auto;
+    }
+
+    .project {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
