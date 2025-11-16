@@ -51,7 +51,7 @@ loader.load(
 );
 
 camera.position.z = 6;
-camera.position.x = 1;
+camera.position.x = 0;
 camera.position.y = 0;
 
 // Animation loop
