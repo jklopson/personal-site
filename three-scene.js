@@ -29,10 +29,10 @@ let model;
 
 const loader = new THREE.GLTFLoader();
 loader.load(
-    'models/Bonfire.glb',
+    'models/avatar.glb',
     function(gltf) {
         model = gltf.scene;
-        model.scale.set(2, 2, 2);
+        model.scale.set(10, 10, 10);
         
         const box = new THREE.Box3().setFromObject(model);
         const center = box.getCenter(new THREE.Vector3());
@@ -60,7 +60,7 @@ function animate() {
     
     // Rotate loaded model
     if (model) {
-        model.rotation.y += 0.001;
+        model.rotation.y += 0.01;
     }
     
     renderer.render(scene, camera);
