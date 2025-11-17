@@ -53,14 +53,13 @@ loader.load(
 camera.position.z = 6;
 camera.position.x = 0;
 camera.position.y = 0;
-
 // Animation loop
 function animate() {
     requestAnimationFrame(animate);
     
     // Rotate loaded model
     if (model) {
-        model.rotation.y += 0.01;
+        model.rotation.y += 0.02;
     }
     
     renderer.render(scene, camera);
