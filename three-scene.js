@@ -8,15 +8,15 @@ renderer.setClearColor(0x3d3d3d, 1);
 container.appendChild(renderer.domElement);
 
 // Add lighting
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
 scene.add(ambientLight);
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.4);
 directionalLight.position.set(5, 5, 5);
 scene.add(directionalLight);
 
 // Additional point lights for better model visibility
-const pointLight1 = new THREE.PointLight(0xffffff, 0.5);
+const pointLight1 = new THREE.PointLight(0xffffff, 0.4);
 pointLight1.position.set(-5, 5, 5);
 scene.add(pointLight1);
 
@@ -29,10 +29,10 @@ let model;
 
 const loader = new THREE.GLTFLoader();
 loader.load(
-    'models/avatar.glb',
+    'models/render.glb',
     function(gltf) {
         model = gltf.scene;
-        model.scale.set(10, 10, 10);
+        model.scale.set(15, 15, 15);
         
         const box = new THREE.Box3().setFromObject(model);
         const center = box.getCenter(new THREE.Vector3());
@@ -52,7 +52,7 @@ loader.load(
 
 camera.position.z = 6;
 camera.position.x = 0;
-camera.position.y = 0;
+camera.position.y = 3.5;
 // Animation loop
 function animate() {
     requestAnimationFrame(animate);
